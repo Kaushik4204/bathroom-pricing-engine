@@ -151,20 +151,6 @@ Transcript parsing is based on keyword extraction (extendable to NLP).
 ---
 
 ## How This System Could Evolve
-🔁 Feedback Loop
-Collect client feedback on quote accuracy.
-
-Adjust pricing templates dynamically using supervised learning.
-
-🧠 Vector Memory
-Store user preferences or historical pricing using vector embeddings (e.g., FAISS).
-
-Personalize quotes per client history or contractor style.
-
-🔄 Real-Time Supplier Pricing
-Replace static materials.json with API integrations to hardware vendors.
-
-Adjust material cost daily or weekly for live pricing accuracy.
 
 ---
 
