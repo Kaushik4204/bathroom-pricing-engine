@@ -200,7 +200,7 @@ Pull requests are welcome. Please include tests for any logic changes.
 
 ## Example Transcript
 
-```json
+```bash
 Client wants to renovate a small 4m² bathroom. 
 They’ll remove the old tiles, redo the plumbing for the shower, 
 replace the toilet, install a vanity, repaint the walls, 
