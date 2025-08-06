@@ -112,7 +112,7 @@ Each task includes:
 
 🧠 confidence_score: Indicates pricing template relevance
 
-##Pricing & Margin Logic
+## Pricing & Margin Logic
 Each task uses a pricing template (data/price_templates.csv) that defines:
 
 Typical labor time
