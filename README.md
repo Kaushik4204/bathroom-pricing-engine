@@ -81,8 +81,9 @@ The system outputs an itemized JSON file: output/sample_quote.json
   
   "tasks": [
   
-    {
-      "task": "replace the toilet",
+   {
+    
+   "task": "replace the toilet",
       "labor_cost": 60.0,
       "material_cost": 70,
       "estimated_duration_hours": 1.5,
@@ -90,10 +91,12 @@ The system outputs an itemized JSON file: output/sample_quote.json
       "margin": 0.2,
       "total_price": 156.0,
       "confidence_score": 0.9
-    },
+   
+   },
     ...
   ],
  
   "global_confidence_score": 0.87
+
 }
 
