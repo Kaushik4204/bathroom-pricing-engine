@@ -178,9 +178,10 @@ Example: If actual cost/time differs significantly from quote, log and learn fro
 
 ## Vector Memory (LLM-enhanced Context Retention)
 
-Store past interactions or renovation history using vector embeddings.
+Store past user interactions and renovation history using vector embeddings.
 
-This allows for smarter, more personalized pricing by remembering user preferences, recurring patterns, or frequently requested materials.
+This enables smarter, more personalized pricing by retaining preferences, frequently requested services, and contextual patterns from prior jobs.
+
 
 ---
 
@@ -189,4 +190,21 @@ This allows for smarter, more personalized pricing by remembering user preferenc
 Integrate APIs from suppliers (e.g., IKEA, Home Depot, local vendors) to fetch live material costs.
 
 Automatically update quotes when supplier pricing or availability changes, ensuring up-to-date and location-aware estimates.
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome. Please include tests for any logic changes.
+
+---
+
+## Example Transcript
+
+```json
+Client wants to renovate a small 4m² bathroom. 
+They’ll remove the old tiles, redo the plumbing for the shower, 
+replace the toilet, install a vanity, repaint the walls, 
+and lay new ceramic floor tiles. Budget-conscious. Located in Marseille.
+```
+
 
