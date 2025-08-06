@@ -1,0 +1,7 @@
+task_keyword,labor_hours,hourly_rate,material_cost,margin,vat_rate,confidence_score
+remove tiles,2,40,15,0.1,0.2,0.85
+plumbing,4,50,60,0.2,0.2,0.8
+toilet,1.5,40,70,0.2,0.2,0.9
+vanity,2,40,90,0.2,0.2,0.85
+paint,3,40,20,0.15,0.2,0.9
+floor tiles,5,45,100,0.15,0.2,0.88

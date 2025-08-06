@@ -1,0 +1,6 @@
+{
+  "tiles": { "cost": 120 },
+  "toilet": { "cost": 80 },
+  "vanity": { "cost": 100 },
+  "paint": { "cost": 50 }
+}
