@@ -73,8 +73,9 @@ python pricing_engine.py
 ##  Output JSON Schema
 The system outputs an itemized JSON file: output/sample_quote.json
 
+
+```json
 {
- 
   "zone": "Bathroom",
   "location": "Marseille",
   "tasks": [
@@ -92,4 +93,60 @@ The system outputs an itemized JSON file: output/sample_quote.json
   ],
   "global_confidence_score": 0.87
 }
+```
+---
+
+Each task includes:
+
+📦 material_cost: From materials.json
+
+👷 labor_cost: labor_hours × hourly_rate
+
+⏱ estimated_duration_hours: From template
+
+💸 vat_rate: From vat_rules.py (location + type)
+
+📈 margin: From template
+
+💰 total_price: (labor + material) * (1 + margin) * (1 + VAT)
+
+🧠 confidence_score: Indicates pricing template relevance
+
+##Pricing & Margin Logic
+Each task uses a pricing template (data/price_templates.csv) that defines:
+
+Typical labor time
+
+Hourly labor cost
+
+Material cost
+
+Default profit margin
+
+Confidence in accuracy
+
+Price Calculation Formula
+
+base_price = labor_cost + material_cost
+
+with_margin = base_price * (1 + margin)
+
+final_price = with_margin * (1 + VAT) * city_factor
+
+Note - City Factor is an adjustment multiplier (e.g., 1.1 for expensive cities).
+
+---
+
+## Assumptions & Edge Cases
+If a task is not matched, an error is logged in JSON.
+
+City adjustment uses hardcoded city factors (can be improved).
+
+Confidence scoring is rule-based (can use ML in future).
+
+VAT is uniform per task; in reality, some may be exempt or different.
+
+Transcript parsing is based on keyword extraction (extendable to NLP).
+
+
 
