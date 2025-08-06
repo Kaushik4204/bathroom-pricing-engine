@@ -83,7 +83,7 @@ The system outputs an itemized JSON file: output/sample_quote.json
   
    {
     
-   "task": "replace the toilet",
+     "task": "replace the toilet",
       "labor_cost": 60.0,
       "material_cost": 70,
       "estimated_duration_hours": 1.5,
