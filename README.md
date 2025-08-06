@@ -18,3 +18,35 @@ This engine:
 
 ## 📦 Repo Structure
 
+bathroom-pricing-engine/
+├── pricing_engine.py # Main execution script
+
+├── pricing_logic/ # Modular logic components
+
+│ ├── material_db.py
+
+│ ├── labor_calc.py
+
+│ └── vat_rules.py
+
+├── utils/
+
+│ ├── parser.py
+
+│ └── helpers.py
+
+├── data/
+
+│ ├── materials.json # Raw materials database
+
+│ └── price_templates.csv # Task-pricing templates
+
+├── output/
+
+│ └── sample_quote.json # Final structured output
+
+├── tests/
+
+│ └── test_logic.py # Logic validation tests
+
+├── README.md 
