@@ -74,9 +74,13 @@ python pricing_engine.py
 The system outputs an itemized JSON file: output/sample_quote.json
 
 {
+
   "zone": "Bathroom",
+  
   "location": "Marseille",
+  
   "tasks": [
+  
     {
       "task": "replace the toilet",
       "labor_cost": 60.0,
@@ -89,6 +93,7 @@ The system outputs an itemized JSON file: output/sample_quote.json
     },
     ...
   ],
+ 
   "global_confidence_score": 0.87
 }
 
